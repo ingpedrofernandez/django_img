@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SHOW PAGE</title>
+</head>
+<body>
+<H1>THIS IS THE SHOW PAGE!!!</H1><br><br>
+{% if key1 %}
+{% for i in key1 %}
+Image Name : {{i.Imagename}}
+<br>
+<img src="{{MEDIA_URL}}{{i.Image.url}}" width="200" height="200" alt="" srcset="">
+<br><br>
+{% endfor %}
+{% endif %}
+</body>
+</html>
